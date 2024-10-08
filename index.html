@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.webp" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="https://mail.google.com/mail">Gmail</a>
+          </li>
+          <li>
+            <a href="./pages/images.html">Images</a>
+          </li>
+          <li class="nav__li--hover">
+            <img
+              src="./assets/lab.png"
+              alt="Lab image"
+              class="nav__img--lab lab--link"
+            />
+          </li>
+          <li class="nav__li--hover">
+            <img src="./assets/menu.svg" alt="menu image" />
+          </li>
+          <li class="nav__li--hover">
+            <div class="nav--link__profile"></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main  -->
+    <main>
+      <!-- Google logo -->
+      <section class="hero">
+        <img src="" alt="Google logo" class="hero__logo" />
+      </section>
+
+      <!-- Search input -->
+      <section class="search">
+        <form action="">
+          <div class="search__container">
+            <div class="search__container--search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input type="text" class="search__container--input" />
+            <div class="search__container--btn">
+              <div class="search__container--micro">
+                <img src="./assets/micro.svg" alt="microphone" />
+              </div>
+              <div class="search__container--lens">
+                <img src="./assets/lens.svg" alt="lens" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- Shortcut functionality -->
+      <section class="shortcut">
+        <div class="shortcut--add"></div>
+        <div class="shortcut__card">
+          <div class="shortcut__card--icon">
+            <button id="btn--add">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="shortcut__card--title">
+            <p>Add shortcut</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <section class="footer">
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://about.google/?utm_source=google-US&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+                >Advertising</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/"
+                >Business</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__div--center">
+          <div>
+            <img
+              src="./assets/leaf.png"
+              alt="leaf icon"
+              class="footer__img--leaf"
+            />
+          </div>
+          <a
+            href="https://sustainability.google/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="
+            >Our third decade of climate action: join us</a
+          >
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="https://policies.google.com/privacy?hl=en&fg=1"
+                >Privacy</a
+              >
+            </li>
+            <li>
+              <a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+            </li>
+            <li><a href="">Settings</a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Modal view for add shortcuts -->
+    <section class="modal">
+      <div class="modal__container">
+        <p>Add shortcut</p>
+
+        <form action="">
+          <div>
+            <label for="">Name</label>
+            <div class="modal__container--input">
+              <input type="text" id="modal__input--name" />
+              <div class="modal__input--line"></div>
+            </div>
+          </div>
+          <div>
+            <label for="">URL</label>
+            <div class="modal__container--input">
+              <input type="text" id="modal__input--url" />
+              <div class="modal__input--line"></div>
+            </div>
+          </div>
+
+          <div class="modal__container--btn">
+            <button id="btn--cancel">Cancel</button>
+            <button class="btn--disabled" id="btn--done">Done</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+
+  <script src="./js/script.js"></script>
+</html>
